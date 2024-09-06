@@ -1,0 +1,195 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "version": "1.0.2",
+  "manifestVersion": "1.17",
+  "id": "2b023266-76b6-41ee-a42c-c0c23f36776c",
+  "name": {
+    "short": "Duckie-dev",
+    "full": ""
+  },
+  "developer": {
+    "name": "Duckie AI, Inc.",
+    "mpnId": "",
+    "websiteUrl": "https://duckie.ai/",
+    "privacyUrl": "https://duckie.ai/privacy",
+    "termsOfUseUrl": "https://duckie.ai/terms"
+  },
+  "description": {
+    "short": "AI Assistant That Gives Customer Support Teams a Super Power",
+    "full": "Duckie equips support team with product knowledge and investigation assistance to handle support issues faster, without relying on engineering team."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#f2f2f2",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "2beae4a8-427e-438d-b8e6-5ffb67c064ce",
+      "scopes": [
+        "team",
+        "groupChat",
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "title": "/duckie-resolution",
+              "description": "Work with Duckie to resolve support issues"
+            },
+            {
+              "title": "/duckie-investigate",
+              "description": "Search through and investigate your error logs to track down technical issues"
+            },
+            {
+              "title": "/duckie-draft",
+              "description": "Duckie Draft Response helps generate and improve responses to customers"
+            },
+            {
+              "title": "/duckie-track-ticket",
+              "description": "Track a ticket using Duckie"
+            },
+            {
+              "title": "/duckie-ask",
+              "description": "Ask Duckie a question!"
+            },
+            {
+              "title": "/duckie-help",
+              "description": "Learn more about what Duckie can do"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "title": "/duckie-resolution",
+              "description": "Work with Duckie to resolve support issues"
+            },
+            {
+              "title": "/duckie-investigate",
+              "description": "Search through and investigate your error logs to track down technical issues"
+            },
+            {
+              "title": "/duckie-draft",
+              "description": "Duckie Draft Response helps generate and improve responses to customers"
+            },
+            {
+              "title": "/duckie-track-ticket",
+              "description": "Track a ticket using Duckie"
+            },
+            {
+              "title": "/duckie-ask",
+              "description": "Ask Duckie a question!"
+            },
+            {
+              "title": "/duckie-help",
+              "description": "Learn more about what Duckie can do"
+            }
+          ],
+          "scopes": [
+            "team"
+          ]
+        },
+        {
+          "commands": [
+            {
+              "title": "/duckie-resolution",
+              "description": "Work with Duckie to resolve support issues"
+            },
+            {
+              "title": "/duckie-investigate",
+              "description": "Search through and investigate your error logs to track down technical issues"
+            },
+            {
+              "title": "/duckie-draft",
+              "description": "Duckie Draft Response helps generate and improve responses to customers"
+            },
+            {
+              "title": "/duckie-track-ticket",
+              "description": "Track a ticket using Duckie"
+            },
+            {
+              "title": "/duckie-ask",
+              "description": "Ask Duckie a question!"
+            },
+            {
+              "title": "/duckie-help",
+              "description": "Learn more about what Duckie can do"
+            }
+          ],
+          "scopes": [
+            "groupChat"
+          ]
+        }
+      ],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": true
+    }
+  ],
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "492ea0bd-fc6c-490c-8ac7-5164df79d606",
+    "resource": ""
+  },
+  "devicePermissions": [
+    "notifications"
+  ],
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "ChannelMessage.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChannelMessage.Send.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChannelSettings.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "Member.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "TeamMember.Read.Group",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMember.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessage.Read.Chat",
+          "type": "Application"
+        },
+        {
+          "name": "ChatMessage.Send.Chat",
+          "type": "Application"
+        }
+      ]
+    }
+  }
+}
